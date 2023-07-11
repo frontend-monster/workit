@@ -1,0 +1,244 @@
+:root {
+  /* Colors */
+  --dark-blue: 273, 85%, 13%;
+  --davy-grey: 271, 12%, 34%;
+  --eucaplyptus: 150, 100%, 63%;
+  --ghost-white: 276, 100%, 99%;
+  --white: 0, 0%, 100%;
+
+  /* Font */
+  --font-fraunces: "Fraunces", serif;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  background-color: hsla(var(--ghost-white), 1);
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  width: 169%;
+  height: 127%;
+  left: -32%;
+  top: -40%;
+  background: hsla(var(--dark-blue), 1);
+  clip-path: ellipse(80% 50% at 50% 50%);
+}
+
+header > * {
+  position: relative;
+}
+
+.bg-1 {
+  position: absolute;
+  left: -12rem;
+  top: 15%;
+}
+
+.bg-2 {
+  position: absolute;
+  right: -4rem;
+  top: 50%;
+}
+
+.phone {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hero > * {
+  margin-bottom: 4rem;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 10.5rem 0;
+}
+
+main:before {
+  content: "";
+  position: absolute;
+  width: 169%;
+  height: 127%;
+  left: -32%;
+  top: -40%;
+  background: hsla(var(--ghost-white), 1);
+  clip-path: ellipse(80% 50% at 50% 50%);
+}
+
+main > .list-items {
+  position: relative;
+  gap: 4rem;
+}
+
+.list-items .card > * {
+  margin-bottom: 1.5rem;
+}
+
+.list-items .card .text-div > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.card .number {
+  font-family: var(--font-fraunces);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid hsla(var(--dark-blue), 1);
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  border-radius: 50%;
+}
+
+.last-section {
+  margin: 5rem 0;
+  min-height: 40rem;
+}
+
+.last-section-container {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.last-img {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  top: -4rem;
+}
+
+.last-test {
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  right: 0;
+  top: 6rem;
+  width: 68%;
+  position: absolute;
+  background-color: hsla(var(--dark-blue), 1);
+}
+
+.last-test-div {
+  position: relative;
+  padding: 4rem;
+}
+
+.last-test-div > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footer-container {
+  flex-direction: column;
+}
+
+.footer-container > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.social-media {
+  gap: 2rem;
+}
+
+/** 
+    MEDIA QUERIES
+**/
+
+/* Tablet */
+/* Tablet */
+@media screen and (max-width: 772px) {
+  .bg-1 {
+    left: -13rem;
+  }
+
+  .bg-2 {
+    right: -6rem;
+  }
+
+  .phone {
+    width: 70%;
+  }
+
+  main > .list-items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    text-align: left;
+  }
+
+  .list-items .card .text-div > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .last-section {
+    min-height: 60vh;
+  }
+
+  .last-img {
+    width: 50%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .last-section {
+    min-height: 100%;
+  }
+
+  .last-section-container {
+    position: relative;
+  }
+
+  .last-section-container {
+    width: 95%;
+  }
+  .last-img {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .last-test {
+    border-radius: 0rem;
+    top: -5rem;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .container-sm {
+    width: 100%;
+    padding: 2rem;
+  }
+  .phone {
+    width: 80%;
+  }
+  .card {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .list-items .card > * {
+    margin-bottom: 1rem;
+  }
+  .last-img {
+    position: static;
+    width: 100%;
+  }
+
+  .last-test {
+    border-radius: 0rem;
+    top: -2rem;
+    width: 100%;
+    position: relative;
+  }
+}

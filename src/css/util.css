@@ -1,0 +1,138 @@
+/** 
+    TYPOGRAPHY
+**/
+
+.heading {
+    font-family: var(--font-fraunces);
+    font-weight: 600;
+}
+
+.body-p {
+    font-family: var(--font-manrope);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.l {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.m {
+    font-size: 3.5rem;
+    line-height: 1.14;
+}
+
+.s {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+
+/** 
+    BUTTONS
+**/
+
+.btn-primary {
+    font-weight: bold;
+    border: 2px solid transparent;
+    background-color: hsla(var(--eucaplyptus), 1);
+    color: hsla(var(--dark-blue), 1);
+    padding: 1rem 1.5rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: hsla(var(--eucaplyptus), 1);
+    border: 2px solid hsla(var(--eucaplyptus), 1);
+}
+
+.btn-secondary {
+    font-weight: bold;
+    color: hsla(var(--white), 1);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: hsla(var(--eucaplyptus), 1);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    color: hsla(var(--eucaplyptus), 1);
+}
+
+/**
+    Colors
+**/
+
+.dark-blue {
+    color: hsla(var(--dark-blue), 1);
+}
+
+.davy-grey {
+    color: hsla(var(--davy-grey), 1);
+}
+
+.ghost-white {
+    color: hsla(var(--ghost-white), 1);
+}
+
+.white {
+    color: hsla(var(--white), 1);
+}
+
+
+/** 
+    UTILS
+**/
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.container-sm {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: hsla(var(--eucaplyptus), 1);
+}
+
+/** 
+    MEDIA QUERIES
+**/
+
+/* Tablet */
+@media screen and (max-width: 772px) {
+    .l {
+        font-size: 3.75rem;
+    }
+
+    .s {
+        font-size: 1.75rem;
+    }
+}
